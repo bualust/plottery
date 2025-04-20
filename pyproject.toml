@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pylint", "black"]
+dev = ["ruff"]
 
 [project.scripts]
 Plottery = "plottery:main"

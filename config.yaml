@@ -5,16 +5,16 @@ Lumi: 139.
 Normalise: False
 SelectionCuts: 'foam==0.5 and (njets>=5 and nbjets>=4)==0'
 TreeName: 'nominal_Loose'
-Processes: 
-    File: 
+Processes:
+    File:
         - 'mc16[a-d-e]_nom/410470_user*'
         - 'mc16[a-d-e]_nom/41123[3-4]*_AFII*'
         - 'mc16[a-d-e]_nom/41211[6-7]*_AFII*'
-    Name: 
+    Name:
         - 'ttbar PP8'
         - 'ttbar PH7'
         - 'ttbar aH7'
-    Selection: 
+    Selection:
         - '' #and HF_SimpleClassification == 0'
         - '' #and HF_SimpleClassification == 0'
         - '' #and HF_SimpleClassification == 0'

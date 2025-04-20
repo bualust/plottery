@@ -1,1 +1,0 @@
-from Plottery import main

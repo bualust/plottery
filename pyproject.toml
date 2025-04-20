@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Plottery"
+name = "plottery"
 version = "0.0.1"
 dependencies = [
     "pandas",
@@ -20,4 +20,4 @@ dependencies = [
 dev = ["pylint", "black"]
 
 [project.scripts]
-Plottery = "Plottery:main"
+Plottery = "plottery:main"

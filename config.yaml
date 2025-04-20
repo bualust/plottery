@@ -1,0 +1,71 @@
+InputDirectory: '/eos/atlas/atlascerngroupdisk/phys-higgs/HSG8/tH_v34_minintuples_v0/'
+OutDir: 'tHbb_1L_ttbar/'
+Label: 'SR 1L channel'
+Lumi: 139.
+Normalise: False
+SelectionCuts: 'foam==0.5 and (njets>=5 and nbjets>=4)==0'
+TreeName: 'nominal_Loose'
+Processes: 
+    File: 
+        - 'mc16[a-d-e]_nom/410470_user*'
+        - 'mc16[a-d-e]_nom/41123[3-4]*_AFII*'
+        - 'mc16[a-d-e]_nom/41211[6-7]*_AFII*'
+    Name: 
+        - 'ttbar PP8'
+        - 'ttbar PH7'
+        - 'ttbar aH7'
+    Selection: 
+        - '' #and HF_SimpleClassification == 0'
+        - '' #and HF_SimpleClassification == 0'
+        - '' #and HF_SimpleClassification == 0'
+mc_weight: 'weight_mc*xsec_weight*weight_pileup*weight_bTagSF_DL1r_Continuous*weight_jvt*weight_forwardjvt/totalEventsWeighted*weight_leptonSF'
+Variables:
+    - branch_name: 'HF_SimpleClassification'
+      Title: 'HF_SimpleClassification'
+      Nbins: 3
+      LowerRange: -1
+      UpperRange: 1
+      Binning: -99
+      Index: -99
+    - branch_name: 'njets'
+      Title: 'Number of jets'
+      Nbins: 12
+      LowerRange: 3
+      UpperRange: 14
+      Binning: -99
+      Index: -99
+    - branch_name: 'nbjets'
+      Title: 'Number of b-jets'
+      Nbins: 2
+      LowerRange: 3
+      UpperRange: 5
+      Binning: -99
+      Index: -99
+    - branch_name: 'njets_CBT5'
+      Title: 'njets_CBT5'
+      Nbins: 2
+      LowerRange: 3
+      UpperRange: 5
+      Binning: -99
+      Index: -99
+    - branch_name: 'Ht'
+      Title: 'HT'
+      Nbins: 50
+      LowerRange: 0
+      UpperRange: 2500000
+      Binning: -99
+      Index: -99
+    - branch_name: 'foam'
+      Title: 'foam[1]'
+      Nbins: 5
+      LowerRange: 0
+      UpperRange: 5
+      Binning: -99
+      Index: 1
+    - branch_name: 'BDT'
+      Title: 'BDT(tHq)'
+      Nbins: 10
+      LowerRange: 0.
+      UpperRange: 1.
+      Binning: 0.,0.2732,0.3841,0.46,0.5409,0.6265,0.6962,0.7565,0.8176,0.8784,1.
+      Index: 0
